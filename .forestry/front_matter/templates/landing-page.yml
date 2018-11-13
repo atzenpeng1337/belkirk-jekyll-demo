@@ -1,15 +1,9 @@
 ---
 label: landing-page
 hide_body: true
-is_partial: false
+is_partial: true
+display_field: layout
 fields:
-- name: title
-  label: Title
-  type: text
-  hidden: false
-  default: ''
-  config:
-    required: true
 - type: text
   label: Hero Heading
   name: heading
@@ -34,6 +28,13 @@ fields:
   - type: text
     name: href
     label: Link
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+  config:
+    required: true
 - type: textarea
   name: textline
   label: Description
@@ -67,17 +68,21 @@ fields:
   name: show_news
   label: Show News?
   description: Enables a news section with a twitter feed & latest posts
-- type: image_gallery
-  name: partners
-  label: Partner Logos
-- type: boolean
-  name: show_staff
-  label: Show Staff?
-  description: Enables a staff section that lists each person in the People collection
+  default: true
 - name: layout
   label: Layout
   type: text
   hidden: true
   default: home
+  config:
+    required: true
+- type: boolean
+  name: show_staff
+  label: Show Staff?
+  description: Enables a staff section that lists each person in the People collection
+  default: true
+- type: image_gallery
+  name: partners
+  label: Partner Logos
 pages:
 - index.md
