@@ -1,0 +1,9 @@
+---
+label: "#cdc68b"
+hide_body: false
+is_partial: true
+fields:
+- type: color
+  config:
+    color_format: Hex
+  default: "#CDC68B"
