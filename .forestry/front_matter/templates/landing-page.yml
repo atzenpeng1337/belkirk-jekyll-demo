@@ -87,10 +87,19 @@ fields:
   default:
   - "/uploads/2018/11/13/meow.png"
 - type: color
+  name: "---_upload_path___/static/uploads/_year_/_month_/_day___frontmatter_file_url_template___/uploads/_year_/_month_/_day___body_file_url_template___/uploads/_year_/_month_/_day___new_page_extension__md_auto_deploy__false_admin_path___/admin__webhook_url__http_//example_com/webhook_sections___-_path__content___label__pages___create__all_____imported_pages_without_a_fmt_assigned_____will_automatically_use__pages___-_path__content/posts___label__posts___create__all_____use_the__templates__parameter_to_control_____which_templates_can_be_used_for_new_content_____in_this_section__first_listed_template_____is_the_default_option____templates____-_posts____items_in_content/secrets_is_hidden_from_menu_-_path__content/secrets___hidden__true____items_in_content/products_can_be_edited_but_not_created_-_path__content/products___label__products___create__none_version__0_38_1_---"
   config:
-    color_format: RGB
-    required: true
-  default: rgb(115, 107, 107)
-  hidden: false
+    color_format: Hex
+  label: '--- upload_path: "/static/uploads/:year:/:month:/:day:" frontmatter_file_url_template:
+    "/uploads/:year:/:month:/:day:" body_file_url_template: "/uploads/:year:/:month:/:day:"
+    new_page_extension: md auto_deploy: false admin_path: "/admin" webhook_url: http://example.com/webhook
+    sections:  - path: content   label: Pages   create: all   # Imported pages without
+    a FMT assigned   # will automatically use "pages"  - path: content/posts   label:
+    Posts   create: all   # use the "templates" parameter to control   # which templates
+    can be used for new content   # in this section. First listed template   # is
+    the default option.   templates:   - posts  # items in content/secrets is hidden
+    from menu - path: content/secrets   hidden: true  # items in content/products
+    can be edited but not created - path: content/products   label: Products   create:
+    none version: 0.38.1 ---'
 pages:
 - index.md
