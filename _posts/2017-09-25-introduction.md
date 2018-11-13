@@ -12,8 +12,44 @@ layout: post
 banner_image: ''
 
 ---
-Welcome to the Belkirk College of Engineering Demo Site!
+* Header 1
+
+1. Header 1
+
+![](/uploads/2017/11/13/CNODES-logo-lg.jpg)
+
+> Welcome to the Belkirk College of Engineering Demo Site!
 
 This site allows you to explore Forestry's features and functionality, and is **not** meant to be used as a production website. To get started building your own site, please see our [documentation](https://forestry.io/docs/ "Docs").
 
-Thank you for choosing to demo Forestry!
+**Thank you for choosing to demo Forestry!**
+
+* `Code block`
+
+  CtrlAlt0
+* Divider
+
+  CtrlEnter
+
+
+* Undo
+
+  CtrlZ
+* Redo
+
+  CtrlShiftZ
+* Indent
+
+  Tab
+* Unindent
+
+  ShiftTab
+* New Line
+
+  ShiftEnter
+* Media Library
+
+  CtrlShiftU
+* Preview
+
+  CtrlShiftJ
