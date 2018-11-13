@@ -2,7 +2,7 @@
 label: landing-page
 hide_body: true
 is_partial: true
-display_field: layout
+display_field: title
 fields:
 - type: text
   label: Hero Heading
@@ -35,14 +35,6 @@ fields:
   default: ''
   config:
     required: true
-- type: textarea
-  name: textline
-  label: Description
-  config:
-    wysiwyg: true
-    required: true
-    schema:
-      format: markdown
 - name: services
   label: Services
   type: field_group_list
@@ -64,6 +56,14 @@ fields:
     default: ''
   hidden: false
   default: ''
+- type: textarea
+  name: textline
+  label: Description
+  config:
+    wysiwyg: true
+    required: true
+    schema:
+      format: markdown
 - type: boolean
   name: show_news
   label: Show News?
@@ -84,5 +84,13 @@ fields:
 - type: image_gallery
   name: partners
   label: Partner Logos
+  default:
+  - "/uploads/2018/11/13/meow.png"
+- type: color
+  config:
+    color_format: RGB
+    required: true
+  default: rgb(115, 107, 107)
+  hidden: false
 pages:
 - index.md
