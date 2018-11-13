@@ -10,7 +10,7 @@ fields:
   label: Sub Heading
   type: text
   hidden: false
-  default: ''
+  default: "#000000"
 - name: banner_image
   label: Banner Image
   type: file
@@ -22,6 +22,10 @@ fields:
   type: tag_list
   hidden: false
   default: []
+- type: color
+  config:
+    color_format: Hex
+  default: "#000000"
 - name: slug
   label: Slug
   type: text
